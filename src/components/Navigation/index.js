@@ -1,35 +1,43 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import { css } from 'react-emotion';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from '../Misc';
+
+const linkStyles = css`
+  box-shadow: none;
+`;
 
 const menuStyles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '36px',
-    height: '30px',
+    width: '25px',
+    height: '18px',
     left: '36px',
     top: '36px'
   },
   bmBurgerBars: {
-    background: '#373a47'
+    background: '#333',
+    height: 1.5,
+    opacity: 1
   },
   bmCrossButton: {
     height: '24px',
     width: '24px'
   },
   bmCross: {
-    background: '#bdc3c7'
+    background: '#333'
   },
   bmMenu: {
-    background: '#373a47',
+    background: 'white',
     padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
+    fontSize: '1.25rem',
+    lineHeight: '2.125rem'
   },
   bmMorphShape: {
     fill: '#373a47'
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: 'black',
     padding: '0.8em'
   },
   bmOverlay: {
@@ -57,9 +65,15 @@ class Navigation extends Component {
   render() {
     return (
       <Menu styles={menuStyles}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
+        <Link className={linkStyles} to="/">
+          Home
+        </Link>
+        <Link className={linkStyles} to="/about">
+          About
+        </Link>
+        <Link className={linkStyles} to="/blog">
+          Blog
+        </Link>
       </Menu>
     );
   }

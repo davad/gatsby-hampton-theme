@@ -22,6 +22,7 @@
     "gatsby-transformer-remark": "^1.7.17",
     "gatsby-transformer-sharp": "^1.6.10",
     "gatsby-transformer-yaml": "^1.5.11",
+    "gh-pages": "^1.1.0",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.6.0",
     "react-burger-menu": "^2.2.3",

@@ -23,6 +23,7 @@ const typography = new Typography({
   boldWeight: 700,
   overrideStyles: ({adjustFontSizeTo, scale, rhythm }, options) => ({
     'h1': {
+      fontSize: '4rem',
       fontWeight: 900
     }
   })

@@ -3,7 +3,6 @@ import { injectGlobal, css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { TiHome } from 'react-icons/lib/ti';
 import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 import { Link } from '../components/Misc';
 
 /* eslint-disable */
@@ -39,7 +38,6 @@ const Layout = ({ children }) => (
       </Link>
     </div>
     {children()}
-    <Footer />
   </div>
 );
 

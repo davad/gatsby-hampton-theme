@@ -25,6 +25,9 @@ const typography = new Typography({
     'h1': {
       fontSize: '4rem',
       fontWeight: 900
+    },
+    'h3': {
+      marginBottom: '0.74rem'
     }
   })
 });

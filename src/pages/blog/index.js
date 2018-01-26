@@ -2,7 +2,18 @@
 import React from 'react';
 import { Link, Timestamp } from '../../components/Misc';
 import { Box } from '../../components/Layout';
-import { css } from 'react-emotion';
+import styled, { css } from 'react-emotion';
+
+
+const timestampStyles = css`
+  box-shadow: none;
+`;
+
+const More = styled.div`
+  color: #666;
+  float: right;
+  margin-right: 5rem;
+`;
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -20,13 +31,18 @@ const BlogIndex = ({ data }) => {
             .map(({ node: post }, index) => {
               return (
                 <Box key={post.id}>
-                  <Link to={post.fields.slug}>
+                  <Link to={post.fields.slug} className={timestampStyles}>
                     <Timestamp>{post.frontmatter.date}</Timestamp>
                   </Link>
                   <Link to={post.fields.slug}>
                     <h3>{post.frontmatter.title}</h3>
                   </Link>
-                  <p>{post.excerpt}</p>
+                  <p>{post.excerpt}
+                  <More>
+                    <Link to={post.fields.slug}>
+                      {'{more}'}
+                    </Link> 
+                  </More></p>
                 </Box>
               );
             })}

@@ -6,6 +6,7 @@ import { Box } from '../components/Layout';
 
 const imgStyle = css`
   border-radius: 5px;
+  margin-bottom: 1.7rem;
 `;
 
 const About = ({ data }) => {

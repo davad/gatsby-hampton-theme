@@ -4,7 +4,7 @@ import GatsbyLink from 'gatsby-link';
 
 const timestamp = css`
   color: #767676;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Cousine', monospace;
   margin: 0 0 4px;
 `;

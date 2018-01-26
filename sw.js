@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/gatsby-hampton-theme/app-164838005ef7dca7e858.js","a349225bc32c7f05ac0912b20f028a63"],["/gatsby-hampton-theme/app-be464d2d91dd628a58eb.js","10d2f14311ac51d45642d90b39ba8d51"],["/gatsby-hampton-theme/commons-6fd2234b7c0021dc05f9.js","8e80eb5e2abe83a67e30518adbf43ea8"],["/gatsby-hampton-theme/index.html","0cfc45b8b3d6a325746534e90174e460"],["/gatsby-hampton-theme/offline-plugin-app-shell-fallback/index.html","a579faaa00d460983c2f13ff28049899"]];
+var precacheConfig = [["/gatsby-hampton-theme/app-164838005ef7dca7e858.js","a349225bc32c7f05ac0912b20f028a63"],["/gatsby-hampton-theme/app-56a0dc7561b9540cc80b.js","99b06357de98e5af2cd76192b7632c47"],["/gatsby-hampton-theme/app-be464d2d91dd628a58eb.js","10d2f14311ac51d45642d90b39ba8d51"],["/gatsby-hampton-theme/commons-6fd2234b7c0021dc05f9.js","a9d985c8ed61646704c9fd18a06d7d69"],["/gatsby-hampton-theme/index.html","53920338a138556039d1958c6cba6208"],["/gatsby-hampton-theme/offline-plugin-app-shell-fallback/index.html","79ab1d3e4e2750177ad440f285f22543"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 

@@ -2,7 +2,7 @@ import styled, { css } from 'react-emotion';
 
 const colors = {
   primary: 'black',
-  secondary: 'blue'
+  secondary: 'rgba(0, 96, 193, 0.25)'
 };
 
 const buttonBasic = css`

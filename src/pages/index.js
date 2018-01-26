@@ -33,7 +33,7 @@ export default ({ data }) => {
       </Box>
       <Box py={[3, 3, 4]}>
         <Box width={[1, 1, 1 / 2]} m="0 auto" px={[3, 3, 0]}>
-          <h1>This could be another section</h1>
+          <h2>This could be another section</h2>
           <p>With another text object</p>
         </Box>
       </Box>

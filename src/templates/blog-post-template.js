@@ -7,6 +7,8 @@ import { Timestamp, Link } from '../components/Misc';
 const Back = styled.div`
   color: #666;
   float: right;
+  position: relative;
+  bottom: 1.5rem;
 `;
 
 const Template = ({ data }) => {
@@ -17,12 +19,13 @@ const Template = ({ data }) => {
         width={[1, 1, 720]}
         m={['3.5rem 0 0 0', '3.5rem 0 0 0', '3.5rem auto 0 auto']}
         px={[3, 3, 0]}
+        overflow="visible"
       >
         <Back>
           <Link to="/blog">&larr; Blog</Link>
         </Back>
-        <Timestamp>{post.frontmatter.date}</Timestamp>
         <h1>{post.frontmatter.title}</h1>
+        <Timestamp>{post.frontmatter.date}</Timestamp>
         <h5>Written by {post.frontmatter.author.id}</h5>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Box>

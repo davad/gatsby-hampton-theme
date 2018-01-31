@@ -33,5 +33,5 @@ Currently this starter includes the following:
 If you have 'gatsby' installed globally, just start a new project with:
 
 ```
-gatsby new my-project https://github.com/davad/gatsby-hampton-themes
+gatsby new my-project https://github.com/davad/gatsby-hampton-theme
 ```
